@@ -226,19 +226,13 @@ body{
 
 .first_section_block_card{
     display: flex;
-    background: #FFFFFF;
+    background: #7421B0;
     width: 338px;
     height: 294px;
     flex-direction: column;
     gap: 40px;     
     border-radius: 10px;
-    color:black
-}            
-.first_section_block_card:hover{
-    background: #7421B0;
-    color:white;
-    transition: background 1s;
-}
+}  
 .first_section_block_card img{
     padding: 50px 0 0 60px;
     width: 80px;
@@ -250,6 +244,7 @@ body{
     font-weight: 500;
     font-size: 20px;
     line-height: 160%;
+    color: #FFFFFF;
     width: 167px;
     padding: 0px 0 0 60px;
 }
@@ -435,9 +430,7 @@ body{
     .first_section_block_card{
         width: 345px;
         height: 92px;
-        display: flex;
-        flex-direction: row;
-
+        gap:0px;
     }    
     .first_section_block_card img{
         width: 40px;
@@ -449,7 +442,7 @@ body{
         font-size: 14px;
         line-height: 133%;
         width: 117px;
-        padding-left: 60px;   
+        padding-left: 152px;   
         padding-top:27px;
     }
 }  
