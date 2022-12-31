@@ -22,8 +22,8 @@
                     <a href="#">Как использовать</a>
                     <a href="#">Частые вопросы</a>
                     <a href="#" >   
-                        <img src="/img//LanguagePhoto.png" alt="LanguagePhoto" style="cursor: pointer;" onClick="start()">; 
-                        <script>
+                        <img src="/img//LanguagePhoto.png" alt="LanguagePhoto" style="cursor: pointer;">; 
+                        <!-- <script>
                             function start() {
                                 if(window.getComputedStyle(menu_change, null).display == 'none')
                                 {
@@ -34,16 +34,37 @@
                                 }
                                 
                             };
-                        </script>         
+                        </script>          -->
                     </a>
 
+                </div>   
+                <div class="menu_change">     
+                    <img src="/img/burger.png" alt="burger" onclick="start()">
+                    <div class="menu_change_nav" id="menu_change_nav">
+                        <a href="#">Функции</a>
+                        <a href="#">Преимущества</a>
+                        <a href="#">Как использовать</a>
+                        <a href="#">Частые вопросы</a>
+                    </div>               
+                    <script>
+                            function start() {
+                                if(window.getComputedStyle(menu_change_nav, null).display == 'none')
+                                {
+                                    document.getElementById('menu_change_nav').setAttribute('style', 'display: flex');
+                                }
+                                else{
+                                    document.getElementById('menu_change_nav').setAttribute('style', 'display: none');
+                                }
+                                
+                            };
+                        </script>         
                 </div>
             </div>
         </div>
     </header>    
     <main class="main">
         <div class="container"> 
-            <div class="main_common_block">
+            <div class="main_common_block">        
                     <div class="main_left_block">
                         <h1>Делайте снимки и записывайте экран в 1 клик</h1>  
                         <p>Вместе со Screenshoter можно в один клик сделать снимок или записать происходящее на экране ПК,  чтобы поделиться с кем угодно
@@ -71,24 +92,28 @@
                 </div> 
                 <div class="first_section_block_cards">
                     <div class="first_section_block_card">
-                        <img src="/img/arrow.png" alt="arrow">
+                        <img src="/img/arrow.png" alt="arrow" class="firstPhotoCars">
+                        <img src="/img/arrowPink.png" alt="arrowPink" class="secondPhotoCards">
                         <h2>Снимок и запись
                             экрана в 1 клик</h2>
                     </div>   
                     <div class="first_section_block_card">
-                        <img src="/img/arrow.png" alt="arrow">
-                        <h2>Снимок и запись
-                            экрана в 1 клик</h2>
+                        <img src="/img/SaveWhite.png" alt="SaveWhite"   class="firstPhotoCars">   
+                        <img src="/img/SavePink.png" alt="SavePink" class="secondPhotoCards">
+                        <h2>Моментальная
+                            ссылка на файл</h2>
                     </div>
                     <div class="first_section_block_card">
-                        <img src="/img/arrow.png" alt="arrow">
-                        <h2>Снимок и запись
-                            экрана в 1 клик</h2>
+                        <img src="/img/PuzzleWhite.png" alt="PuzzleWhite"   class="firstPhotoCars">   
+                        <img src="/img/PuzzlePink.png" alt="PuzzlePink" class="secondPhotoCards">
+                        <h2>Удобный
+                            редактор снимков</h2>
                     </div>
                     <div class="first_section_block_card">
-                        <img src="/img/arrow.png" alt="arrow">
-                        <h2>Снимок и запись
-                            экрана в 1 клик</h2>
+                        <img src="/img/HeartWhite.png" alt="HeartWhite"   class="firstPhotoCars">   
+                        <img src="/img/HeartPink.png" alt="HeartPink" class="secondPhotoCards">
+                        <h2>Бесплатно
+                            и без регистрации</h2>
                     </div>
                 </div>
             </div>
