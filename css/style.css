@@ -87,37 +87,7 @@ body{
     background: rgba(86, 86, 86, 0.5);
     border: none;
 }  
-.burger_nav{
-    display: flex;
-    flex-direction: row-reverse;
-    position: absolute;
-    right: 0px;
-    display: none;
-    align-items: center;
 
-    
-}        
-.burger_item{
-    display: flex;
-    justify-content: space-between;
-    gap:5px;
-    align-items: center;
-    display: none;
-}    
-.burger_item a:hover{
-    color:blue;
-}
-.burger_item a{
-    font-family: 'Rubik';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 10px;
-    line-height: 150%;
-    /* identical to box height, or 24px */
-
-
-    color: #565656;
-} 
 .SecondLogoCompany{
     display: none;
     width: 180px;
@@ -191,6 +161,7 @@ body{
 /*FIRST_SECTION*/
 .first_section_common_block{
     padding-top: 150px;
+    padding-bottom: 393px;
     display: flex; 
     flex-direction: column; 
     gap:80px;
@@ -266,8 +237,8 @@ body{
         display: block;
     }   
     .header_common_block{
-       gap:120px;
-    }    
+       gap:10px;  
+    }
     .burger_nav{display: flex;}
 
     /*MAIN*/  
