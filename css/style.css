@@ -64,7 +64,7 @@ body{
     right: 0px;
     top:16px;
     z-index: 2;  
-    display: flex;
+    display: none;
     flex-direction: column;
     text-align: right;
     align-items: flex-end;
@@ -74,7 +74,7 @@ body{
      height: 40px;
 }  
 .menu_change_nav{
-    display: flex;
+    display: none;
     flex-direction: column;
     text-align: center;
     background: white;
@@ -93,23 +93,7 @@ body{
 .menu_change_nav a:hover{
     background: linear-gradient(180deg, #7421B0 0%, #D08EFF 100%);
     color: white;
-}
-/* .menu_change h2{
-    padding: 6px 30px;
-    font-family: 'Rubik';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 150%;
-    color: rgba(86, 86, 86, 0.5);
-
-}
-.menu_change h2:hover
-{
-    background: rgba(86, 86, 86, 0.5);
-    border: none;
-}   */
-
+} 
 .SecondLogoCompany{
     display: none;
     width: 180px;
@@ -240,9 +224,6 @@ body{
 .first_section_block_card:hover .firstPhotoCars{
     display: none;
 }   
-.menu_change{display: flex;}
-.menu_change_nav{display: none;}
-
 .secondPhotoCards{display: none;}
 .first_section_block_card:hover .secondPhotoCards
 {
@@ -258,10 +239,10 @@ display: flex;
     padding: 0px 0 0 60px;
 }      
 /*SECOND_SECTIOM*/
-.second_section_common_block{
+.second_section_common_block_item{
     display: flex;
     gap:153px;       
-    padding-bottom: 284px;
+    padding-bottom:300px;
 }   
 .second_section_block_info{
     display: flex;
@@ -272,7 +253,7 @@ display: flex;
     width: 705px;
     height: 397px;
 }      
-.textEnoughpresstwoMouseButtons{color: #7421B0;} 
+.second_section_pink_text{color: #7421B0;} 
 .second_section_block_info h1{
     font-family: 'Rubik';
     font-style: normal;
@@ -291,7 +272,13 @@ display: flex;
     color: #828282; 
     width: 460px;
     padding-top: 40px;
-}  
+}      
+._second_section_common_block_item_special{
+    flex-direction: row-reverse;
+}   
+.second_section_block_info_specia{
+    padding-top: 95px;
+}
 @media(min-width:767px) and (max-width:1460px)   
 {
     .container{
@@ -386,10 +373,10 @@ display: flex;
     .first_section_common_block{
         padding-bottom: 202px;
     }   
-    .second_section_common_block{
+    .second_section_common_block_item{
         flex-direction: column;
         gap:62px; 
-
+        padding-bottom: 189px;
         align-items: center;
     }  
     .second_section_img{
@@ -532,11 +519,12 @@ display: flex;
     .first_section_common_block{
         padding-bottom: 90px;
     }   
-    .second_section_common_block{
+    .second_section_common_block_item{
         flex-direction: column;
         gap:30px; 
         align-items: center;    
         text-align: center;
+        padding-bottom: 100px;
         justify-content: center;
     }  
     .second_section_img{
