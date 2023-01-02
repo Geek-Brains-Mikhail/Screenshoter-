@@ -361,15 +361,17 @@ display: flex;
 .fourth_section_common_block
 {
     display: flex;
-    flex-direction: column;    
-    gap:200px;      
+    flex-direction: column;        
     background: linear-gradient(1.36deg, rgba(255, 255, 255, 0.5) 0.92%, rgba(255, 255, 255, 0) 61.36%), linear-gradient(123.35deg, rgba(235, 243, 208, 0.05) 0%, rgba(235, 243, 208, 0) 18.4%), radial-gradient(29.9% 70.94% at 44.25% 86.96%, rgba(220, 141, 220, 0.05) 0%, rgba(220, 141, 220, 0) 100%), radial-gradient(33.83% 53.57% at 35.87% 100%, rgba(220, 141, 220, 0.05) 0%, rgba(220, 141, 220, 0) 100%), radial-gradient(42.66% 49.72% at 45.56% 44.65%, rgba(203, 173, 235, 0.05) 0%, rgba(194, 166, 241, 0) 100%), linear-gradient(134.59deg, rgba(205, 249, 232, 0.05) 20.63%, rgba(205, 249, 232, 0) 47.84%), linear-gradient(216.44deg, rgba(192, 169, 240, 0) -16.52%, rgba(192, 169, 240, 0.05) -1.04%, rgba(192, 169, 240, 0) 16.99%), linear-gradient(128.53deg, rgba(192, 169, 240, 0) 28.63%, rgba(192, 169, 240, 0.05) 38.5%, rgba(192, 169, 240, 0) 50.26%), radial-gradient(40.75% 97.37% at 90.75% 40.15%, rgba(255, 253, 177, 0.05) 0%, rgba(254, 228, 191, 0.05) 34.46%, rgba(240, 189, 208, 0.05) 69.5%, rgba(255, 129, 38, 0) 100%), rgba(194, 166, 241, 0.05);
     backdrop-filter: blur(20px);     
     border-radius: 70px;   
     width: 1808px;
     height: 1825px;
     margin: 0 auto;
-}                   
+}         
+.fourth_section_top_article{
+    margin-bottom: 300px;
+}              
 .fourth_section_top_article h1{
     font-family: 'Rubik';
     font-style: normal;
@@ -473,7 +475,6 @@ display: flex;
     font-weight: 700;
     font-size: 36px;
     line-height: 43px;
-    text-align: center;
     color: #7421B0;
     padding-bottom: 60px;
 }  
@@ -507,6 +508,7 @@ display: flex;
     line-height: 180%;
     color: #7421B0;
     opacity: 0.3;
+    text-align: center;
 }                      
 .fourth_section_bottom_article_step h3{
     padding-top: 40px;        
@@ -541,7 +543,8 @@ display: flex;
     top:50%;
     transform: translate(-50%,-50%);
     width: 153px;
-}
+}  
+.fourth_section_special_h3_text{width: 215px;}
 @media(min-width:767px) and (max-width:1460px)   
 {
     .container{
@@ -687,9 +690,11 @@ display: flex;
     .second_section_common_block_item:last-child{
         padding-bottom:150px;
     }
-    /*FOURTH_SECTION*/
+    /*FOURTH_SECTION*/        
+    .fourth_section_top_article {
+        margin-bottom: 50px;
+    }
     .fourth_section_common_block{
-        gap:100px;
         width: 730px;
         height: 2441px;
     }                
@@ -742,7 +747,50 @@ display: flex;
         font-size: 14px;
         line-height: 200%;
         width: 442px;
+    }          
+    /*NEW*/  
+    .fourth_section_bottom_article{
+        padding-bottom: 56px;
+    }      
+    .fourth_section_bottom_article h1{
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: 60px;
+    }   
+    .fourth_section_bottom_article_block_steps{
+        display: flex;    
+        flex-direction: column;
+        gap:60px;
     }
+    .fourth_section_bottom_article_step{
+        display: flex;
+        flex-direction: column;
+        width: 442px;
+        height: 305px;
+    }          
+    .fourth_section_bottom_article_step h2{
+        font-size: 18px;
+        line-height: 21px;
+        padding-bottom: 37px;
+    }  
+    .fourth_section_bottom_article_step_block_download{
+        width: 442px;
+        height: 192px;
+    }                                           
+    .fourth_section_bottom_article_step h3{
+        padding-top: 30px;        
+        font-size: 14px;
+        width: 442px;
+    }          
+    .fourth_section_bottom_article_btn{
+        width: 170px;
+        height: 44px;
+    }
+    .fourth_section_bottom_article_btn a{
+        font-size: 12px;
+        width: 115px;
+    }    
+    .fourth_section_special_h3_text{width: 442px;}
 
     
 
@@ -920,10 +968,16 @@ display: flex;
     /*FOURTH_SECTION*/ 
     .fourth_section_common_block{
         gap:60px;
-        width: 376px;
+        width: 374px;
         height: 2226px;
 
-    }             
+    }        
+    .fourth_section_top_article{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }       
     .fourth_section_top_article h1{
         padding: 41px 0px 30px 0px;       
         font-size: 20px;
@@ -967,14 +1021,8 @@ display: flex;
     .fourth_section_card_text_block h3{
         font-size: 18px;
         line-height: 21px;
-        width: 200px;
+        width: 199px;
     } 
-    /* .fouth_section_text_block_common{
-        height: 214px;
-        width: 442px ;
-
-    }     */
-  
     .fourth_section_card p{
         font-size: 12px;
         line-height: 200%;
@@ -987,5 +1035,54 @@ display: flex;
     } 
     .fourth_section_card:nth-child(3) p {
         width: 344px;
-    } 
+    }                   
+    /*NEW*/    
+    .fourth_section_bottom_article{
+        padding-bottom: 30px;
+    }      
+    .fourth_section_bottom_article h1{
+        font-size: 20px;
+        line-height: 24px;      
+        text-align: center;
+        margin-bottom: 30px;
+    }   
+    .fourth_section_bottom_article_block_steps{
+        display: flex;    
+        flex-direction: column;
+        gap:40px;
+    }
+    .fourth_section_bottom_article_step{
+        display: flex;
+        flex-direction: column;
+        width: 345px;
+        height: 229px;
+    }          
+    .fourth_section_bottom_article_step h2{
+        font-size: 18px;
+        line-height: 21px;
+        text-align: center;
+        padding-bottom: 30px;
+    }  
+    .fourth_section_bottom_article_step_block_download{
+        width: 345px;
+        height: 150px;
+    }                                         
+    .fourth_section_bottom_article_step h3{
+        padding-top: 20px;        
+        font-size: 12px;
+        line-height: 180%;
+        text-align: center;
+        width: 345px;
+    }          
+    .fourth_section_bottom_article_btn{
+        width: 170px;
+        height: 44px;
+    }
+    .fourth_section_bottom_article_btn a{
+        font-size: 12px;
+        width: 115px;
+    }    
+    .fourth_section_special_h3_text{width: 345px;}      
+    
+    .fourth_section_top_article{margin-bottom: 60px;}
 }  
