@@ -368,6 +368,7 @@ display: flex;
     width: 1808px;
     height: 1825px;
     margin: 0 auto;
+    margin-bottom: 334px;
 }         
 .fourth_section_top_article{
     margin-bottom: 300px;
@@ -545,6 +546,87 @@ display: flex;
     width: 153px;
 }  
 .fourth_section_special_h3_text{width: 215px;}
+
+/*FIFTH_SECTION*/    
+
+
+
+/*FIRST_SECTION*/
+.fifth_section_common_block{
+    padding-bottom: 200px;
+    display: flex; 
+    flex-direction: column; 
+    gap:80px;
+}      
+.fifth_section_block_top{
+    display: flex;
+    gap:139px;
+}
+.fifth_section_block_top h1{
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 43px;
+    color: #131313;
+    width: 473px;
+}             
+.fifth_section_block_top p{
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 200%;
+    color: #828282;
+    width: 521px;
+}       
+ 
+.fifth_section_block_cards{
+    display: flex;
+    gap:30px;
+    flex-wrap: wrap;
+}
+
+.fifth_section_block_card{
+    display: flex;
+    background: #FFFFFF;
+    width: 338px;
+    height: 349px;
+    flex-direction: column;
+    gap: 40px;     
+    border-radius: 10px;
+    color:black
+}            
+.fifth_section_block_card:hover{
+    background: #7421B0;
+    color:white;
+    transition: background 1s;
+}
+.fifth_section_block_card img{
+    padding: 50px 0 0 45px;
+    width: 80px;
+    height: 80px;
+}     
+.fifth_section_block_card:hover .firstPhotoCars{
+    display: none;
+}   
+.secondPhotoCards{display: none;}
+.fifth_section_block_card:hover .secondPhotoCards
+{
+display: flex;
+}
+.fifth_section_block_card h2{
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 160%;
+    padding: 0px 0 0 45px;
+    width: 235px;
+}
+
+
+
 @media(min-width:767px) and (max-width:1460px)   
 {
     .container{
@@ -792,7 +874,41 @@ display: flex;
     }    
     .fourth_section_special_h3_text{width: 442px;}
 
-    
+     /*FIFTH_SECTION*/    
+     .fifth_section_common_block{
+        gap:60px;
+    }
+    .fifth_section_block_top{
+        gap:67px;
+    }  
+    .fifth_section_block_top h1{
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        width: 287px;
+    }      
+    .fifth_section_block_top p{
+        font-size: 12px;
+        line-height: 200%;
+        width: 324px;
+    }     
+    .fifth_section_block_card{
+        width: 323px;
+        height: 294px;
+        gap:50px;
+        
+    }   
+    .fifth_section_block_card img{
+        padding: 60px 0 0 60px;
+        width: 60px;
+        height: 60px;
+    }  
+    .fifth_section_block_card h2{
+        font-size: 18px;
+        line-height: 160%;
+        width: 248px;
+        padding-left: 45px;
+    }  
 
 }     
 @media(max-width:767px)  
@@ -1084,5 +1200,52 @@ display: flex;
     }    
     .fourth_section_special_h3_text{width: 345px;}      
     
-    .fourth_section_top_article{margin-bottom: 60px;}
+    .fourth_section_top_article{margin-bottom: 60px;}                      
+    /*FIFTH_SECTION*/
+    
+    .fifth_section_common_block{
+        padding-top: 60px;
+        gap:30px;
+    }   
+    .fifth_section_block_top{
+        flex-direction: column;
+        gap:20px;
+        justify-content: center;
+        align-items: center;
+    }   
+    .fifth_section_block_top h1{
+        font-size: 20px;
+        line-height: 24px;
+        text-align: center;
+        width: 287px; 
+    }   
+    .fifth_section_block_top p{
+        font-size: 12px;
+        line-height: 200%;
+        text-align: center;
+        width: 345px;
+    }    
+    .fifth_section_block_cards{
+        gap:20px;
+    }   
+    .fifth_section_block_card{
+        width: 345px;
+        height: 105px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }    
+    .fifth_section_block_card img{
+        width: 40px;
+        height: 40px; 
+        padding-top: 5px;
+    }                           
+    .fifth_section_block_card h2
+    {
+        font-size: 14px;
+        line-height: 133%;
+        width: 163px;
+        padding-left: 0px;   
+        padding-top:0px;
+    }  
 }  
